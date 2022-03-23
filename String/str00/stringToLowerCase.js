@@ -1,3 +1,5 @@
+// need to solve a problems on string to upper case / lower case / count camel case char
+
 function stringToLowerCase(str) {
     let l = str.length;
     for(let i=0; i<l; i++){
