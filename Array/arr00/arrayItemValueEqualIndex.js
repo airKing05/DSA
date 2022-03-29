@@ -9,6 +9,6 @@ function indexEqualValue(arr) {
     }
 }
 
-const arr = [1, 2, 3, 4, 5,9,8]
+const arr = [0, 2, 3, 4, 5,9,8]
 result = indexEqualValue(arr);
 console.log(result);
