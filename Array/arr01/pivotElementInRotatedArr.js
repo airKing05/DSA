@@ -1,6 +1,6 @@
 // pivot element is an element who has least value is roateted array;
 
-const pivotElementInRotetedArr = (arr) => {
+const pivotElementInRotatedArr = (arr) => {
     let l = arr.length;
     let start = 0;
     let end = l - 1;
@@ -18,5 +18,5 @@ const pivotElementInRotetedArr = (arr) => {
 }
 const arr = [4, 6, 8, 9,10,11,1, 2, 3]; // not working when change the size of array
                                         // only working when size of array is even
-const result = pivotElementInRotetedArr(arr);
+const result = pivotElementInRotatedArr(arr);
 console.log(result);
