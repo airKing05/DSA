@@ -1,3 +1,5 @@
+// need to print alternate number of given array
+
 function print(arr) {
     let  l = arr.length;
     for (let i = 0; i<l; i++) {
