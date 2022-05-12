@@ -1,3 +1,6 @@
+// does not working
+
+
 function reverse(str) {
     let splitStr = str.split('');
     // console.log(splitStr)
