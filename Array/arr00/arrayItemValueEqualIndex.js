@@ -1,3 +1,4 @@
+// find the element who's value is equal to array's index
 function indexEqualValue(arr) {
     let  l = arr.length;
     for (let i = 0; i<l; i++) {

@@ -7,7 +7,7 @@ let num = 1;
 switch(ch){
     case 1 : {
         console.log('not a character');
-             break;   // break nahi lagayenge to aage wale case ko bhi execute ke deta  hai
+             break;   // break nahi lagayenge to aage wale case ko bhi execute kar deta  hai
     }
     case '1' : {
         switch(num){

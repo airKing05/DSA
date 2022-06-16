@@ -1,3 +1,5 @@
+// check the difference of the given number's digit product and sum
+
 const intProductSumDiff = (n) =>{
     let product = 1;
     let sum = 0;
@@ -5,8 +7,7 @@ const intProductSumDiff = (n) =>{
         let digit = n%10;
         product = product*digit;
         sum = (sum + digit);
-        n = n/10;
-
+        n = parseInt(n/10);
     }
     return product - sum
 

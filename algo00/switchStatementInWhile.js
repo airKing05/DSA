@@ -1,4 +1,4 @@
-// while loop ne break statement use nahi krni hai uske anda switch cases fase huye hai to bahr  kese aaye
+// while loop ne break statement use nahi krni hai uske andar switch cases fase huye hai to bahr  kese aaye
 // to exit(); ka use krenege
 
 

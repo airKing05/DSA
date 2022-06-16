@@ -1,4 +1,4 @@
-// how much not does we have 100, 50, 20, 1
+// how much note does we have of 100, 50, 20, 1 rupee
 
 
 const findNote = (r) => {

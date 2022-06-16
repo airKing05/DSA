@@ -26,6 +26,6 @@ const countPrimeNumber = (n)=>{
     return countPrime;
    
 }
-const number = 5;
+const number = 10;
 const result = countPrimeNumber(number);
 console.log(result);

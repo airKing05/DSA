@@ -13,6 +13,24 @@ const powerOfTwo = (n) => {
     return false;
     
 }
-const number = 16;
+const number = 1024;
 const result = powerOfTwo(number);
 console.log(result);
+
+
+
+// function bToD(n, r) {
+//   let originalNumber = n;
+//   let count = 0;
+//   while (n != 0) {
+//     let factor = n % r;
+//     if (factor === 0) {
+//       count++
+//     };
+//     n = parseInt(n / r);
+//   }
+//   let twoPowerForm = r ** count;
+//   // console.log(twoPowerForm, originalNumber)
+//   if (twoPowerForm == originalNumber) return true;
+//   return false;
+// }
