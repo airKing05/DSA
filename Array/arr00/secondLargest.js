@@ -18,3 +18,14 @@ function secondLargest(arr) {
 const arr = [1, 2, 3, 4, 5,8, 11,44,9, 15]
 result = secondLargest(arr);
 console.log(result);
+
+
+
+// by sorting the array
+// function bToD(arr) {
+//     let len = arr.length;
+//     let sortedArr = arr.sort((a, b) => a - b);
+//     let max = sortedArr[len - 1]
+//     let secMax = sortedArr[len - 2]
+//     return secMax;
+// }

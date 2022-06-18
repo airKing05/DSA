@@ -9,7 +9,7 @@ let l = arr.length;
 
 arr.forEach(function(element, index, array){
     
-     console.log(element, index, array)
+     console.log("forEach",element, index, array)
 });
 
 let object = {
@@ -18,10 +18,10 @@ let object = {
     number: 9632587410
 }
 for (const key in object) {
-    console.log(`${key} is and value of key is ${object[key]}`)
+    console.log("for in", `${key} is and value of key is ${object[key]}`)
 }
 
 
 for (let iterator of arr) {
-    console.log(iterator, arr)
+    console.log("for of", iterator, arr)
 }

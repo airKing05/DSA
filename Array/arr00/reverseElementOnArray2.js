@@ -15,3 +15,22 @@ const reverseArr = (arr) =>{
 const array =[2,4,5,6,7, 8];
 const result = reverseArr(array);
 console.log(result)
+
+
+
+// by pop and push method
+function reverseByPopPush(arr) {
+   let len = arr.length;
+   let i = 0;
+   let newArr = []
+   while (len > i) {
+      let lastElement = arr.pop();
+      newArr.push(lastElement);
+      i++;
+   }
+   return newArr;
+}
+
+
+const resultReverseByPopPush = reverseByPopPush(array);
+console.log("resultReverseByPopPush", reverseByPopPush)

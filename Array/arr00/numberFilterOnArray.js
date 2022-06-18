@@ -1,3 +1,5 @@
+// filter variables according to their type
+
 
 let arr = [12, 5, "this", 6, 8, "anilraj", 10]
 let l = arr.length;
@@ -22,3 +24,29 @@ for (let i=0; i<l; i++){
 console.log(num);
 console.log(str);
 console.log(other);
+
+
+
+
+// by typeOf oprator, for of loop
+// function bToD(arr) {
+//     let num = [];
+//     let str = [];
+//     let other = [];
+//     for (key of arr) {
+
+//         console.log(isNaN(key), key)
+//         if (typeof key === 'number') {
+//             num.push(key)
+//         } else if (typeof key === 'string') {
+//             str.push(key)
+//         } else (
+//             other.push(key)
+//         )
+//     }
+//     return {
+//         "num": num,
+//         "str": str,
+//         "other": other
+//     }
+// }

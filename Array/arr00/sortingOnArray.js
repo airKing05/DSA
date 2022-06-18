@@ -1,15 +1,17 @@
-let arr = [1,3,2,4,16, 8,7, 0];
-let l = arr.length;
+// sorting the array this technic is bubble sort O(n^2)
 
-for (let i=0; i<l; i++){
-    if(arr[i]==0){
-      arr.splice(arr[i])
-      console.log(arr)
+function sortingOnArray(arr) {
+  let len = arr.length;
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len - 1; j++) {
+      if (arr[j + 1] <= arr[j]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+      }
     }
-    else if(arr[i]>arr[i+1]){
-        let temp;
-        temp = arr[i]
-        arr[i] = arr[i+1];
-        arr[i+1] = temp
-    }
+
+  }
+  return arr
 }
+let array = [1, 3, 2, 4, 2, 5, 1, 3, 0];
+const result = sortingOnArray(array);
+console.log(result)

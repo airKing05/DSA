@@ -1,3 +1,5 @@
+
+// worng answer
 const prefectArr = (arr) => {
     let l = arr.length;
     for (let i = 0; i < l; i++) {
