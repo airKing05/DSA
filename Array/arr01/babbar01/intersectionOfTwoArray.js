@@ -17,7 +17,7 @@ const intersectionOfArray = (arr1, arr2) =>{
              }
             if(arr1[i]===arr2[j]){
                 intersect.push(arr2[j])
-                arr2[j] = min;
+                arr2[j] = min;  // min value ko phle match element ke sath metch krne ke baad us ki jgh assign kr denege taki fir se usi ko match na kres
                 console.log(arr2[j])
                 break;
             }

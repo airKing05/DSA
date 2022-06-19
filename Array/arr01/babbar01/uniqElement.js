@@ -19,7 +19,7 @@ const uniqElement = (arr) =>{
 };
 
 // xor=> 1^1=0; 0^1= 1
-// 1^2^3^2^3^1^4 = 0^0^0^4=4
+// 1^2^3^2^3^1^4 = 0^0^0^4=4 // same element mil ke zero
 
 const uniqElementXOR = (arr) =>{
     let l = arr.length;
