@@ -30,7 +30,7 @@ const intersectionOfTwoArray2 = (arr1, arr2) =>{
 
 };
 
-const array1 = [1,2,2,3,3,3]; 
-const array2 = [2,3,3,4];
+const array1 = [2, 3, 3, 4,5];
+const array2 = [1, 2, 2, 3, 3, 3,5];
 const result = intersectionOfTwoArray2(array1, array2); 
 console.log(result)

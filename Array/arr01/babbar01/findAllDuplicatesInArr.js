@@ -3,7 +3,7 @@
 
 // not able to du that
 const findAllDuplicatesInArr = (arr) =>{
-    let ans;
+    let ans=[];
     let count= 0;
     let l = arr.length;
       // xor all element of the array
@@ -12,7 +12,7 @@ const findAllDuplicatesInArr = (arr) =>{
         for (let j = i+1; j< l; j++ ){
             if(start^arr[j] ==0){
                 count++
-                //ans.push(arr[j])
+                ans.push(arr[j])
                 console.log(start^arr[j])
             }
         }

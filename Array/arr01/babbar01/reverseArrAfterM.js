@@ -6,7 +6,7 @@ const reverseArrM = (arr, m) =>{
  for(let i=m; i<l/2; i++){
      [arr[start], arr[end]] = [arr[end], arr[start]]
      start++;
-     end--
+     end--;
  }
  return arr
 };

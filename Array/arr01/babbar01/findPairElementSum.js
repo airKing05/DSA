@@ -12,12 +12,13 @@ const findPairElementSum= (arr, s) =>{
                 let temp = [];
                 let mini = Math.min(arr[i], arr[j]);
                 let maxi = Math.max(arr[i], arr[j]);
+                console.log(mini, maxi)
                 temp.push(mini, maxi)          
                 pair.push(temp);   // array pushing inside a array so   2D array will created
              }
         }
     }
-    pair.sort((a, b) => a - b)  // not working, ans should be like- [[ -3, 3 ], [ -3, 3 ], [ -2, 2 ]  ]
+    pair.sort((a, b) => a - b)  // not working, because 2d array hai, ans should be like- [[ -3, 3 ], [ -3, 3 ], [ -2, 2 ]  ]
     return pair;   // [ [ 1, 4 ], [ 2, 3 ] ]
 
 };

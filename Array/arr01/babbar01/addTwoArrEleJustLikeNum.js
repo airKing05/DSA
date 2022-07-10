@@ -51,9 +51,10 @@ const addTwoArrEleJustLikeNum = (arr1, arr2) => {
         sumArr.push(sum);
         
     }
-    // reverse sumArr
-   const sortedSumArray =  sumArr.sort((a, b) => a-b)
-return sortedSumArray;
+    // reverse sumArr, yha pr glti kr di hai
+   // const sortedSumArray =  sumArr.sort((a, b) => a-b)
+   // for(let i=sumArr.length-1,)
+return sortedSumArray.reverse();
 
 };
 

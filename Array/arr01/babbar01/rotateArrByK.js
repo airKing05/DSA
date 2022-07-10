@@ -6,7 +6,7 @@
 // like (n+1)%n=1 ; that means [_, 4, _, _] which is next 2(k=2) from the last position
 // store it like arr[(i+k)%l] = arr[i];
 // where as i is current position of 4 and k is for rotating times
-
+// summary - last ke k-th element ko uthake aage dalan hai
 
 const rotateArrByK = (arr, k) => {
     let l = arr.length;
