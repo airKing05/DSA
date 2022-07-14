@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<head>
+    <title>Insert Element In To Array</title>
+</head>
+
+    <h1>Insert Element In To Array l#04</h1>
+    <p>inset element in to requried position</p>
+    <span>Array :</span>
+    <span id="arr" >[3,6,2,7,6,8,1]</span>
+    <br/>
+    <br/>
+<input id="pos" type="text" placeholder="enter position"/>
+<button onclick="deleteEleInArr()">Delete Element</button>
+    <script>
+        function deleteEleInArr(){
+      let arr = [3,6,2,7,6,8,1];
+      let position = document.getElementById('pos').value;
+      position = parseInt(position);
+      let len = arr.length;
+      console.log(arr)
+      for (let i=position; i<len-1; i++){
+           arr[i] = arr[i+1]
+      }
+     arr.length = arr.length-1
+     console.log(arr)
+     let newArr = document.getElementById('arr');
+     newArr.innerText = arr;
+     // return arr
+        }
+        // let result = deleteEleInArr()
+        // console.log(result)
+      
+    </script>
+</body >
+</html >

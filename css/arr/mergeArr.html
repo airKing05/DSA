@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>mergeTwoArr</title>
+</head>
+<body>
+    <h1>Merge Two Array in third array L#6</h1>
+    <p>this is linear operation time and space complexity are O(n) and S(1)</p>
+    <span>time complexity is taking 16 + 9 line</span>
+    <span>space complexity is taking 5 variables</span>
+    <h5>without sorting this is best program then mergeSortedArr</h5>
+    <span> incase of sorting it will consume 9*9 more line, so it wold worst line </span>
+    <script>
+        console.log("merge two array")
+        function mergeArr(){
+        let arr1 = [3,2,5,1,10];
+        let arr2 = [4,8,6,9];
+        let len1 =arr1.length;
+        let len2 =arr2.length;
+        let arr3 = [];
+        for(let i =0; i<len1; i++){
+            arr3[i] = arr1[i]
+        }
+        for(let i =0; i<len2; i++){
+            arr3[len1+i] = arr2[i]
+        }
+        return arr3;
+    }
+    let result = mergeArr();
+    console.log(result)
+
+    </script>
+</body>
+</html

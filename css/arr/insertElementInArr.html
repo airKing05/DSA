@@ -2,10 +2,49 @@
 <head>
     <title>Insert Element In To Array</title>
 </head>
-<body>
-    <h1>Insert Element In To Array</h1>
-    <script>
 
+    <h1>Insert Element In To Array l#03</h1>
+    <p>inset element in to requried position</p>
+    <span>Array :</span>
+    <span id="arr">[8,5,4,6,2,7]</span> 
+    </br>s
+</br>
+    <input type="text" id="pos" placeholder="enter position where do you need to add new element " />
+</br>
+</br>
+    <input type="text" id="ele" placeholder="enter element" />
+</br>
+</br>
+    <button onclick="insertElementInArr()">insert element</button>
+   
+    <script>
+        function insertElementInArr(){
+       let arr= [8,5,4,6,2,7];
+       let position = document.getElementById('pos').value;
+    //    console.log(position)
+       position = parseInt(position)
+       let newEle = document.getElementById('ele').value;
+       newEle = parseInt(newEle)
+       let len = arr.length;
+       for(let i=len-1; i>=0; i--){
+           if(i>=position){
+              arr[i+1]= arr [i]
+              if(i==position) arr[i]=newEle;
+           }
+       }
+       console.log(arr)
+      let newArr =  document.getElementById('arr');
+      newArr.innerText = [...arr];
+   // return arr;
+        }
+        // let result = insertElementInArr();
+        // console.log(result)
+
+
+       // by js method, splice
+       let data = [4,5,2,6,2,6]
+       data.splice(2,0,22);
+       console.log(data)
     </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>mergeTwoSortedArr</title>
+</head>
+<body>
+    <h1>Merge Two Sorted Array in third array L#7</h1>
+    <p> time and space complexity are O(n) and S(1)</p>
+    <span>time complexity is taking 29 + 9 line</span>
+    <span>space complexity is taking 8 variables</span>
+    <h5>this is worst program if sorting is not requried</h5>
+    <script>
+        console.log("merge two array")
+        function mergeSortedArr(){
+        let arr1 = [1,2,5,8,13];
+        let arr2 = [4,6,7,9];
+        let len1 =arr1.length;
+        let len2 =arr2.length;
+        let arr3 = [];
+        let i=0;
+        let j=0;
+        let k =0;
+        while(i<len1 && j<len2){  // || will work prefctly for the second condition
+            if(arr1[i]<=arr2[j]){
+               arr3[k] = arr1[i]
+               //arr3.push(arr1[i])
+                i++;
+            }else{
+                arr3[k]= arr2[j]
+                //arr3.push(arr2[j])
+                j++;
+            }
+          k++;
+        }
+        while(i<len1){
+            arr3[k] = arr1[i]
+            i++;
+            k++;
+        }
+        return arr3;
+    }
+    let result = mergeSortedArr();
+    console.log(result)
+
+    </script>
+</body>
+</html
