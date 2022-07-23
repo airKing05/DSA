@@ -1,3 +1,4 @@
+// l#2
 // need to reach the target on stair case
 // can move two jump or one jump up
 
