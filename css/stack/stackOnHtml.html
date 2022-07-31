@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Implementation In html</title>
+  </head>
+  <body>
+    <h2>L#15; Stack Implementation In html</h2>
+
+    <input type="number" placeholder="enter ele" id="getEle" style="font-size: 20px;"/>
+    <button onclick=" pushInStack()" style="font-size: 20px;">add ele</button>
+    <button onclick="popInStack()" style="font-size: 20px;">remove ele</button>
+    <button onclick="displayStack()" style="font-size: 20px;">show ele</button>
+
+    <script>
+      let data = [];
+      let currentSize = data.length;
+      let max = 5;
+
+      function pushInStack() {
+        let ele = document.getElementById('getEle').value;
+        if (currentSize >= max) {
+          alert("stackOverFlow, can't push: " + ele);
+        } else {
+          // data.push(ele);
+          data[currentSize]= parseInt(ele);
+          currentSize++;
+        }
+        //console.log(data);
+         document.getElementById('getEle').value = "";
+      }
+
+      function popInStack() {
+        if (currentSize <= 0) {
+          alert("stack Empty, can't pop");
+        } else {
+          data.pop();
+          currentSize--;
+        }
+       // console.log(data);
+      };
+
+      function displayStack(){
+        console.log(data);
+      }
+    </script>
+  </body>
+</html>
