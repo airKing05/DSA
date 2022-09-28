@@ -2,16 +2,24 @@
 
 
 
-function bToD(arr, k) {
+function bToD(arr) {
     let len = arr.length;
-    let temp = []
-    for(let i =0; i<len; i++){
-     let newPosition = (i+k)%len;
-     temp[newPosition] = arr[i];
+    for(let i=0; i<len; i++){
+        for(let j=0; j<len; j++){
+            if(arr[j]>=arr[j+1]){
+               let temp = arr[j];
+               arr[j] = arr[j+1];
+               arr[j+1] = temp;
+               console.log(arr)
+            }else{
+                continue;
+                
+            }
+        }
     }
-    return arr = temp
+    return arr;
 }
-let array1 = [2, 3, -4, 5, 6, 7, 8]
+let array1 = [10, 3, 9, 7, 8]
 
-const result = bToD(array1, 2);
+const result = bToD(array1);
 console.log("result",result) 

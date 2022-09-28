@@ -20,7 +20,7 @@ const binarySearch = (arr, key) => {
 }
 
 const arr = [1, 2, 3, 5, 6, 8];
-const key = 3;
+const key = 8;
 
 const result = binarySearch(arr, key);
 console.log(result)

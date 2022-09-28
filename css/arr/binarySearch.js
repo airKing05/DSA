@@ -14,6 +14,6 @@ const linearSearch = (arr, key) => {
     }
 }
 let arr = [1,3,6,8,10,14,26];
-let key = 14;
+let key = 1;
 let result = linearSearch(arr, key);
 console.log(result);
