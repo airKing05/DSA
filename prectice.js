@@ -1,6 +1,6 @@
 // 
 
-
+console.log('aaa');
 
 function bToD(arr) {
     let len = arr.length;
