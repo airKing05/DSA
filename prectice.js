@@ -1,26 +1,26 @@
-// 
-dsdsd
-conssdddssd
-console.log('aaa');
+// babacademy pretcie 
 
-function bToD(arr) {
-    let len = arr.length;
-    for(let i=0; i<len; i++){
-        for(let j=0; j<len; j++){
-            if(arr[j]>=arr[j+1]){
-               let temp = arr[j];
-               arr[j] = arr[j+1];
-               arr[j+1] = temp;
-               console.log(arr)
-            }else{
-                continue;
-                
-            }
-        }
-    }
-    return arr;
+// add string number
+
+
+
+function reverse(str1) {
+let str = str1
+//str.split("").reduce((a,b)=> a = b + a ,"")
+let len = str.length;
+let start = 0;
+let end = len-1;
+for(let i=0; i<len/2; i++){
+//console.log([str[start], str[end]] ,  [str[end], str[start]])
+ [str[start], str[end]] = [str[end], str[start]]
+ //console.log([str[start], str[end]] ,  [str[end], str[start]])
+ start++;
+ end--;
+ console.log(start, end)
+ //console.log(str)
 }
-let array1 = [10, 3, 9, 7, 8]
+return str;
+}
+const result =reverse("anil");
+console.log(result)
 
-const result = bToD(array1);
-console.log("result",result) 

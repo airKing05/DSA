@@ -1,5 +1,5 @@
 // L#07
-// check that the charater os string is unique 
+// check that the charater of string is unique 
 
 
 function isUnique(map){

@@ -7,7 +7,7 @@
 // 2/ create object/map
 // 3. check is string is odd or even
 // 3a if odd => return False (if there is more then one odd number character count)  "abcde"
-// 3b if even => retun False (if there is an even number character count of each character) "abaa"
+// 3b if even => retun False (if there is no an even number character count of each character) "abaa"
 // 4 return => True
 
 function charCount(map) {

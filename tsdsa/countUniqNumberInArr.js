@@ -30,3 +30,20 @@ function uniqNumberM1(arr) {
 const array = [1, 1, 3, 4, 4, 4, 4, 6, 6, 6, 7, 8, 8];
 const resultM1 = uniqNumberM1(array);
 console.log(resultM1)
+
+
+
+// m3
+// create map 
+// create array of map's keys
+function uniqNumberM3(arr) {
+   let map ={}
+   for(let key of arr){
+    map[key] = (map[key] || 0) + 1 
+   }
+   let newArr = Object.keys(map);
+   return newArr.length
+}
+
+const resultM3 = uniqNumberM3(array);
+console.log(resultM3)
