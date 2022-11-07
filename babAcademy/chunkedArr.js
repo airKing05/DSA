@@ -64,3 +64,23 @@ function chunkedArr3(arr, number){
 
 const result3 = chunkedArr3(array, 3);
 console.log("result3", result3)
+
+
+//m4
+
+function chunkedArr4(arr, num) {
+  let len = arr.length;
+  let newArr = [];
+  for (let i = 0; i < len; i += num) {
+    console.log(i);
+    let smallArr = [];
+    for (let j = 0; j < num; j++) {
+      smallArr.push(arr[i + j]);
+    }
+    newArr.push(smallArr);
+  }
+  return newArr;
+}
+const array4 = [1, 2, 3, 4, 5, 6, 7];
+const result4 = chunkedArr4(array, 3);
+console.log(result);

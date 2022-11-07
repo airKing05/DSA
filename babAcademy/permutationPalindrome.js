@@ -22,6 +22,7 @@ function permutationPalindrome(str) {
     }
     if (len % 2 === 1) {
         // odd
+        // ydi ek se jyda char ka count ODD hoga to retun false
         let count = 0
         for (let i of str) {
             if (map[i] % 2=== 1 || map[i] === 1) {
@@ -33,6 +34,7 @@ function permutationPalindrome(str) {
         }
     } else {
         // even
+        // ydi ek se jyda(ek char ke alawa) kisi bhi char ka count EVEN nahi hoga to retun false
         for (let i of str) {
             console.log(map[i])
             if (map[i] % 2 !== 0) {
