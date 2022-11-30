@@ -34,7 +34,7 @@
 
 //+++++++++++++++++++++++++++++++++++++++++
 // recurcive halper function
-// here idOdd fucntion is helper function
+// here isOdd fucntion is helper function
 
 function oddArrRecursion(arr) {
     let oddArr1 = [];

@@ -2,8 +2,7 @@
 // longest Substring without Repeating Charactor
 // sliding window
 
-const longestSubstrWORepeatingChar = (str) => {
-    
+const longestSubstrWORepeatingChar = (str) => { 
     let len = str.length;
     if(len<0){
         return 0;
