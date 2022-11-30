@@ -25,11 +25,10 @@ function jewelsInStone(j, s){
         }
     }
     console.log(objj, objs)
-
     return count;
-} 
+}
 
-let jewels = "a";
+let jewels = "ab";
 let stones = "abbbbda";
 let result = jewelsInStone(jewels, stones);
 console.log(result);
