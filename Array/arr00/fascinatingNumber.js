@@ -1,6 +1,46 @@
 // fascinatingNumber, if 3 digit number after multiplying to 2 and 3 result digit should me present in between 1-9, at least one time
 
 
+//After multiplication with 2 and 3, and concatenating with original number, resultant number is 192384576 which contains all digits from 1 to 9.
+
+
+
+function fascinatingNumber(num) {
+    let product2 = (num * 2).toString();
+    let product3 = (num * 3).toString();
+
+    let newNum = (num + product2 + product3);
+    let numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    let obj = {};
+    for (let key of newNum) {
+        obj[key] = (obj[key] || 0) + 1;
+    }
+
+    let isFsinating = true;
+
+    if (Object.keys(obj)[0] == 0) {
+        console.log("oth key", Object.keys(obj)[0])
+    }
+    for (let i = 0; i < Object.keys(obj).length; i++) {
+        let key = Object.keys(obj)[i];
+        let value = Object.values(obj)[i];
+
+        if (key != numArr[i]) {
+            // console.log(key, numArr[i])
+            isFsinating = false;
+        }
+        if (value > 1) {
+            // console.log(value)
+            isFsinating = false;
+        }
+        //console.log("key",key, value)
+    }
+    return isFsinating;
+}
+
+const result = fascinatingNumber(192)
+console.log(result)
 
 function isFascinatingNumber(arr) {
     let len = arr.length;

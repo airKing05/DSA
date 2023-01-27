@@ -26,8 +26,15 @@ console.log(str);
 console.log(other);
 
 
+//m2
+const getNumber = arr => {
+    return numbers = arr.filter((item) => !isNaN(item))
+}
 
+const result = getNumber([12, 5, "this", 6, 8, "anilraj", 10]);
+console.log(result)
 
+// m3
 // by typeOf oprator, for of loop
 // function bToD(arr) {
 //     let num = [];

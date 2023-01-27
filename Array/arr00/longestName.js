@@ -22,28 +22,17 @@ result = longestName(arr);
 console.log(result);
 
 
+// m2
 
+function longestName1(arr) {
+    let maxLenName = arr[0];
+    arr.filter((item, index, arr) => {
+        if (maxLenName.length < item.length) {
+            maxLenName = item;
+        }
+    })
+    return maxLenName;
+}
 
-// function bToD(arr) {
-//     let len = arr.length
-//     var maxLength = 0;
-//     let storeIndexValueOfMax = 0
-//     let maxLengthName = []
-
-//     for (let i = 0; i < len; i++) {
-
-//         let nameLength = arr[i].length;
-//         if (nameLength > maxLength) {
-//             maxLength = nameLength;
-//             storeIndexValueOfMax = i
-//             // console.log(maxLength, i)
-//             // maxLengthName.push(arr[i])
-//         }
-
-//     }
-//     //console.log(storeIndexValueOfMax)
-//     return arr[storeIndexValueOfMax];
-// }
-// let array = ["anil", "anilraj", "anilrajmeena", "ramNarayanBundiWale", "anilrajmeenaBundi", "akshay"];
-// const result = bToD(array);
-// console.log(result)
+const result1 = longestName1(["anil", "anilraj", "anilrajmeena", "ramNarayanBundiWale", "anilrajmeenaBundibbbbbb", "akshay"]);
+console.log(result1)

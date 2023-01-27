@@ -30,7 +30,7 @@ function getEleFromNestedArr(obj){
         }
         //console.log(acc)
         return acc;
-
+        //return acc.concat(books)
         //console.log("acc",acc.concat(...acc, ...books)
     }, []);
     return books1;
