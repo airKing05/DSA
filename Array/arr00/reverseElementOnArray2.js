@@ -6,10 +6,8 @@ const reverseArr = (arr) =>{
      console.log( [arr[start], arr[end]] = [arr[end], arr[start]])
       start++;
       end--;
-      
    } 
    return arr
- 
 };
 
 const array =[2,4,5,6,7, 8];

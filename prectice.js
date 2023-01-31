@@ -41,33 +41,30 @@
 
 // prime number on array
 
-function isPrime(n) {
-  let isPrimeNo = false;
-  if (n < 1) {
-    isPrimeNo = false;
-  }
-  if (n == 2) {
-    isPrimeNo = true;
-  }
-  for (let i = 2; i < n; i++) {
-    if (n % i == 0) {
-      //console.log(n)
-      isPrimeNo = false;
-      break;
-    } else {
-      isPrimeNo = true;
-    }
-  }
-  return isPrimeNo;
-}
-function func(arr) {
-  const primeArr = arr.filter((item) => { 
-    if(isPrime(item)){
-      return item
-    }
-  })
-  return primeArr;
-}
-const result = func([1, 3, 2, 4, 89, 6, 7, 15, 25, 29, 50, 100])
+// remove multiple element from array
 
+// remove 0's from array;
+
+
+
+//babbar01
+
+//pair of elemets theris should be equal to 0
+
+// intersection of two array;
+
+// reverse array after k-th indexAfter;
+
+
+function func(arr, k) {
+  let len = arr.length;
+  let j = 0;
+  for (let i = k; i < (len - k); i++) {
+    console.log(arr[i], arr[len - (j + 1)]);
+    [arr[i], arr[len - (j + 1)]] = [arr[len - (j + 1), arr[i]]]
+    j++;
+  }
+  return arr
+}
+const result = func([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 3);
 console.log(result)

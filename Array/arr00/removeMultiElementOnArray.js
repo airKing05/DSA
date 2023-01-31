@@ -83,5 +83,25 @@ for (let i=0; i<len; i++){
 console.log(c)
 
 
+//two method is there
+
+function uniqBySorting3(arr) {
+    arr.sort((a, b) => a - b);
+    let j = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[j] != arr[i + 1]) {
+            j++;
+            arr[j] = arr[i + 1]
+            //console.log(arr)
+        }
+    }
+    //newArr = arr.filter((item, index, array) => array.indexOf(item) == array.lastIndexOf(item))
+    return arr.slice(0, j)
+}
+const result = uniqBySorting3([1, 3, 2, 4, 16, 8, 7, 4, 3, 20, 96, 1, 1])
+
+console.log(result)
+
+
 
 

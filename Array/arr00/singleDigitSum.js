@@ -16,23 +16,12 @@ function sum(num) {
 
     return num;
 }
-
 const result = sum(12345);
 console.log(result);
 
 
 
 // method-2
-function recursive(num) {
-    if (num < 10) {
-        return num;
-    } else {
-        const s = sum(num);
-        return recursive(s)
-    }
-}
-
-
 function sum2(num) {
     let add = 0
     while (num !== 0) {
@@ -43,26 +32,51 @@ function sum2(num) {
     return add
 }
 
+function recursive(num) {
+    if (num < 10) {
+        return num;
+    } else {
+        const s = sum(num);
+        return recursive(s)
+    }
+}
+
 const result2 = recursive(12345);
 console.log(result2);
 
 
+//m2a
+function func(n) {
+    let sum = 0;
+    while (n != 0) {
+        let digit = n % 10;
+        sum = sum + digit;
+        n = parseInt(n / 10);
+    }
+    if (sum >= 10) {
+        return func(sum);
+    }
+    return sum;
+}
+const result = func(12345);
+console.log(result)
+
 
 // method -3 
+function sum3(num) {
+    num = num.toString().split("").map(item => parseInt(item));
+    let add = num.reduce((acc, curr) => {
+        return acc = acc + curr
+    }, 0);
 
-function sum3(num){
-   num = num.toString().split("").map(item => parseInt(item));
-   let add = num.reduce((acc, curr) => {
-    return acc  = acc + curr}, 0);
-
-    if(add>=10){
+    if (add >= 10) {
         //console.log(add)
-       return sum3(add)
-    }else{
-      // console.log(add)
-       return add
+        return sum3(add)
+    } else {
+        // console.log(add)
+        return add
     }
-  
+
 }
-const result3= sum3(12345)
+const result3 = sum3(12345)
 console.log(result3)

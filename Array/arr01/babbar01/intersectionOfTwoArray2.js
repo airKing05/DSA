@@ -1,5 +1,8 @@
 
 
+// it will work only if both the array are sorted; 
+
+
 const intersectionOfTwoArray2 = (arr1, arr2) =>{
     let l1 = arr1.length;
     let l2 = arr2.length;

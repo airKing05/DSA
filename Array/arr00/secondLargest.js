@@ -21,6 +21,33 @@ console.log(result);
 
 
 
+function secondLargest1(arr) {
+    let max = arr[0];
+    let secMax = arr[0];
+    let len = arr.length;
+
+    for (let i = 1; i < len; i++) {
+        if (arr[i] > max) {
+            console.log(secMax, max)
+            secMax = max;
+            max = arr[i];
+        }
+
+        // ydi phle hi max element mil jaye to aage bachi hui array me secMax element ko check krna pdega
+        // us condtion me arr[i] != max
+        if (arr[i] > secMax && arr[i] < max) {
+            secMax = arr[i]
+        }
+
+    }
+    return secMax;
+}
+const result1 = secondLargest1([101, 103, 10.5, 1221, 1006, 107]);
+console.log(result1)
+
+
+
+//m-2
 // by sorting the array
 // function bToD(arr) {
 //     let len = arr.length;

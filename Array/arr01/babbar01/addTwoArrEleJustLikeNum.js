@@ -62,3 +62,63 @@ let array1 = [1, 8, 3];
 let array2 = [2, 6];
 let result = addTwoArrEleJustLikeNum(array1, array2);
 console.log(result)
+
+
+
+
+//m1a
+
+function addTwoArrEleJustLikeNum1(arr1, arr2) {
+    let sumArr = []
+    let i = 0;
+    let j = 0;
+    let len1 = arr1.length;
+    let len2 = arr2.length;
+    let carray = 0;
+    let sumDigit = 0;
+
+
+    while (i < len1 && j < len2) {
+        sumDigit = carray + arr1[len1 - (i + 1)] + arr2[len2 - (j + 1)];
+        let reminder = sumDigit % 10;
+        sumArr.unshift(reminder);
+        carray = parseInt(sumDigit / 10);
+        i++;
+        j++;
+    }
+    //console.log(i, j)
+
+    // ydi phle arr1 bdi hai
+    while (i < len1) {
+        sumDigit = carray + arr1[len1 - (i + 1)];
+        let reminder = sumDigit % 10;
+        sumArr.unshift(reminder);
+        carray = parseInt(sumDigit / 10);
+        i++;
+    }
+
+    // ydi dusri arr2 bdi hai
+    while (j < len2) {
+        sumDigit = carray + arr2[len2 - (j + 1)];
+        let reminder = sumDigit % 10;
+        sumArr.unshift(reminder);
+        carray = parseInt(sumDigit / 10);
+        j++;
+    }
+
+    // ydi carray = 25, we also need to seprate that digit also;
+    while (carray > 10) {
+        sumDigit = carray
+        let reminder = sumDigit % 10;
+        sumArr.unshift(reminder);
+        carray = parseInt(sumDigit / 10);
+    }
+
+    if (carray) {
+        sumArr.unshift(carray);
+        return sumArr;
+    }
+    return sumArr
+}
+const result1 = addTwoArrEleJustLikeNum1([121, 3], [129, 9]);
+console.log(result1)
