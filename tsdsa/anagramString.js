@@ -15,6 +15,7 @@ function anagramString(str1, str2) {
     let dataStr1 = {};
     for (let i = 0; i < len1; i++) {
          // dataStr1[str1[i]] = (dataStr1[str1[i]] || 0 ) + 1
+         // obj[i] = (obj[i]+1) || 1
         if (str1[i] in dataStr1) {
             dataStr1[str1[i]]++
         } else {

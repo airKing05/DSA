@@ -23,3 +23,20 @@ function palindrome(str) {
 
 const result = palindrome(string);
 console.log(result);
+
+
+
+//m2
+function palindrome1(str) {
+    let palindrome = true
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] != str[str.length - (i + 1)]) {
+            palindrome = false;
+            break;
+        }
+    }
+    return palindrome
+};
+
+const result1 = palindrome1("abbcba");
+console.log(result1)

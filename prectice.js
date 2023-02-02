@@ -55,16 +55,28 @@
 
 // reverse array after k-th indexAfter;
 
+//baba acedmy 
+// add two strings withot paarInt method
 
-function func(arr, k) {
-  let len = arr.length;
-  let j = 0;
-  for (let i = k; i < (len - k); i++) {
-    console.log(arr[i], arr[len - (j + 1)]);
-    [arr[i], arr[len - (j + 1)]] = [arr[len - (j + 1), arr[i]]]
-    j++;
+//jwel in stone
+
+function map(str){
+  let obj = {};
+  for(let i of str){
+    obj[i] = obj[i]+1 || 1;
   }
-  return arr
+  return obj;
 }
-const result = func([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 3);
+function func(str) {
+  let palindrome = true
+  for(let i = 0; i<str.length/2; i++){
+    if (str[i] != str[str.length-(i+1)]){
+        palindrome = false;
+        break;
+     }
+  }
+  return palindrome
+};
+
+const result = func("abbcba");
 console.log(result)

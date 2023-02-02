@@ -6,6 +6,7 @@ function isMap(str) {
     let map = {};
     for (let char of str) {
         map[char] = map[char] ? map[char] + 1 : 1;
+        // obj[i] = (obj[i] + 1) || 1
     }
     return map;
 }
