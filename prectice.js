@@ -60,23 +60,45 @@
 
 //jwel in stone
 
-function map(str){
-  let obj = {};
-  for(let i of str){
-    obj[i] = obj[i]+1 || 1;
-  }
-  return obj;
-}
-function func(str) {
-  let palindrome = true
-  for(let i = 0; i<str.length/2; i++){
-    if (str[i] != str[str.length-(i+1)]){
-        palindrome = false;
-        break;
-     }
-  }
-  return palindrome
-};
+// sting compression
+// "aabcccaaaddb" => "a2b1c3a3d2b1"
+// url encoded
 
-const result = func("abbcba");
-console.log(result)
+function func(str) {
+  str = str.split(" ").join("");
+  let canformPalindrom = true;
+  let len = str.length;
+  let obj ={};
+
+  for(let key of str){
+    obj[key] = obj[key]+ 1 || 1;
+  }
+
+  if(len%2 ===1){
+    // ydi length odd hogi to
+    // ek se jyada char ka count odd nahi hona chahiye
+    let count = 0;
+
+    for(let key of str){
+      if(obj[key]%2 === 1 || obj[key] ===1){
+        count++;
+      }
+      if(count>1){
+        canformPalindrom =false
+      }
+    }
+  }else{
+    // even
+    // ek char ke alawa baki ke char ki count even hi honi chaiye
+
+    for(let key of str){
+      if(obj[key]%2 === 1){
+       canformPalindrom = false
+      }
+    }
+  }
+  return canformPalindrom;
+}
+
+const result = func("abaa");
+console.log(result);
