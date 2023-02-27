@@ -13,6 +13,13 @@
 //  i          j       => arr1[i]<arr2[j] => newArr.push(arr[i]) else j
 // i++         j++
 
+
+// in all case
+//T: O(NlogN) and S: O(N);
+
+
+
+
 // helper function merger two sorted Arr
 function merge(arr1, arr2) {
     //console.log(arr1, arr2)

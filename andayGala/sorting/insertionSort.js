@@ -9,7 +9,7 @@
     //j--;
 //}
 
-// partialy sorthe
+// partialy sort
 //T: O(N) and S: O(1);
 
 // worst case
