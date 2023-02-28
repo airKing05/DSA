@@ -24,7 +24,7 @@ class MinStack{
         this.minStack.pop();
         return this.stack.pop();
     }
-
+// get top
     top(){
         if (!this.stack.length) return null;
         return this.stack[this.stack.length-1];
