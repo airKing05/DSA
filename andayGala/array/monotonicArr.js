@@ -13,7 +13,7 @@
 
 // in this case array always be sorted
 // retun false is itration of array does not match these conditions
-//  same => arr[0]===arr[len-1]
+//  same ele => arr[0]===arr[len-1]
 // increasing  => arr[0]<arr[len-1]
 // decreasing => arr[0]> arr[len-1]
 

@@ -42,3 +42,31 @@ function strCompression(str){
 const string = "abcd33d";
 const result = strCompression(string);
 console.log(result);
+
+
+
+
+
+const fn = (s) => {
+  let len = s.length;
+  let newStr = "";
+
+  let first = 0;
+  let second = 1;
+  let count = 1;
+
+  while (second < len) {
+    if (s[first] === s[second]) {
+      count++;
+      second++;
+    } else {
+      newStr = newStr + s[first] + count;
+      count = 1;
+      first = second;
+      second++;
+    }
+  }
+
+  if (totalCount === len) return s;
+  return newStr;
+}

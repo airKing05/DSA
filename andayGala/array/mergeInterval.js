@@ -15,7 +15,7 @@ function mergerInterval(arr) {
         let min = arr[i][0];
         let max = arr[i][1];
 
-        let j = i + 1
+        let j = i + 1;
         for (; j < arr[i].length; j++) {
             if (max > arr[i + j][0]) {
                 // console.log(max, arr[i + j][0])

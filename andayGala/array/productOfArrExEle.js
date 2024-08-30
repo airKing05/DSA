@@ -30,7 +30,7 @@ console.log(result)
 
 
 // m2 without dividing approch
-// T:O(N) and S: O(n)=> counting zero ans storing it into array
+// T:O(N) and S: O(n)=> counting zero and storing it into array
 // suffelout zero 
 // if count of 0 is more then one times then all the elements of output array will be zero
 // if count of 0 is Exactly one times then exacept the 0th index all the elements of output array will be zero

@@ -43,6 +43,7 @@ function missingNumber2a(arr) {
     }
 
     for(let i = 0; i<=len; i++){
+        // will run 0, 1 but in case of 2 it will be undefinded, so return 2, bcoz 2 is not exist on the array
         if(!obj[i]){
            return i
         }

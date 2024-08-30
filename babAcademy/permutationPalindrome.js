@@ -4,7 +4,7 @@
 
 // Check that given string can form a palindrome or not, while re-arenging charaters
 // 1. remove the space
-// 2/ create object/map
+// 2. create object/map
 // 3. check is string is odd or even
 // 3a if odd => return False (if there is more then one odd number character count)  "abcde","abbaa"
 // 3b if even => retun False (if there is no an even number character count of each character) "abaa"

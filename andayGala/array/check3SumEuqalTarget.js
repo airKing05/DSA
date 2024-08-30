@@ -11,7 +11,7 @@
 // [ -4, {[-1, -1, 0, 1, 2]}]
 // target1 = arr[i]*-1
 // apply two pointer approch on array from "j to k"
-// if arr[i]+ arr[k] == target1
+// if arr[j]+ arr[k] == target1
 // return [target1*-1, arr[j], arr[k]]
 // j++; k--; go on fot the next pairs
 // if j>k then i++; j=i+1; k=len-1

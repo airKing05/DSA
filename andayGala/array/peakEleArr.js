@@ -50,6 +50,7 @@ function peakEleArr2(arr) {
       
         if (mid > left && mid > right) {
             //console.log("from cond",arr[i])
+            // return mid ki position i+1
             return i + 1;
         } 
     }

@@ -31,3 +31,54 @@ const array = [1, 2, 3, 4, 2, 5, 6, 1, 7, 8, 9];
 const number = 4
 const result = largestSumConsecutiveDigit(array, number);
 console.log("max sum",result)
+
+
+
+// m-2
+const largestSumConsecutiveDigit1 = (arr, num) => {
+    let len = arr.length;
+
+    let max_sum = 0;
+
+    for (let i = 0; i < (len + 1 - num); i++) {
+        let curr_sum = 0;
+        for (let j = i; j < num + i; j++) {
+            curr_sum = curr_sum + arr[j];
+        }
+
+        if (curr_sum > max_sum) {
+            max_sum = curr_sum;
+        }
+    }
+    return max_sum
+}
+
+
+
+const result1 = largestSumConsecutiveDigit1(array, number);
+console.log("max sum", result1)
+
+
+
+// m-3
+const largestSumConsecutiveDigit2 = (arr, num) => {
+    let len = arr.length;
+
+    let max_sum = 0;
+
+    for (let i = 0; i < num; i++) {
+        max_sum += arr[i]
+    }
+    let window_sum = max_sum;
+    for (let j = num; j < len; j++) {
+        window_sum = window_sum - arr[j - num] + arr[j];
+        max_sum = Math.max(window_sum, max_sum);
+    }
+
+    return max_sum
+}
+
+
+
+const result2 = largestSumConsecutiveDigit2(array, number);
+console.log("max sum", result1)

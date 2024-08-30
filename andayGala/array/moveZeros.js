@@ -7,6 +7,17 @@
 
 //m1 filter method 
 
+function moveZeros1(arr) {
+    let len = arr.length;
+    let newArr = arr.filter((item) => item !== 0);
+
+    for (let i = 0; i <= (len - newArr.length); i++) {
+        newArr.push(0)
+    }
+    return newArr;
+
+}
+
 //m2 this will not work and not a good idea
 function moveZeros(arr) {
     let len = arr.length;
@@ -14,6 +25,7 @@ function moveZeros(arr) {
     for (let i = 0; i < len; i++) {
         if (arr[i] == 0) {
             delete arr[i];
+            //arr.splice(i, 1);
             count++
         }
     }
@@ -30,7 +42,7 @@ console.log(result)
 
 
 // m4 
-// sliding window approch (deatials on tsdsa/countUniqNumberInArr)
+// sliding window approch (detials on tsdsa/countUniqNumberInArr)
 //  i  j              i  j  (i!=j)                                       i j 
 // [0, 1, 0, 3,12]=>[ 1, 3, 12, 3, 12 ] =>(i++ and  arr[i] = arr[j]) => [ 1, 3, 12, 3, 12 ]
 

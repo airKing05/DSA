@@ -9,9 +9,9 @@
 //T: O(N) S:O(N)
 function checkSumEqaulTarget(arr, t){
 let len = arr.length;
-let obj= {}
+let obj= {};
 for(let i=0; i<len; i++){
-    obj[arr[i]] = i
+    obj[arr[i]] = i;
 };
 let indexArr = [];
 for(let i=0; i<len; i++){

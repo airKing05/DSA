@@ -3,7 +3,7 @@
 // in this array is sorted [-5,-3,-2, 0, 2, 4, 7]
 // in this case time complexity is O(N) or quadratic
 
-// id array is not sorted then,
+// if array is not sorted then,
 // 1. sort the array O(NlogN)
 // 2. apply two pointer approch and get index of elementes
 // 3. find the original index from original array from the sorted array's elements

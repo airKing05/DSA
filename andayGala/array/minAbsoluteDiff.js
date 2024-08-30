@@ -8,7 +8,7 @@
 // find the minimum difference and find thouse element who's difference equal to the minimun difference
 // mini difference 2 for loop
 // find the pair element 2 for loop
-// sor the array
+// for the array
 // T: O(N**2) AND S:O(N)
 
 function minAbsoluteDiff(arr) {

@@ -30,16 +30,16 @@ function allDuplicateNumArr(arr) {
     let duplicateArr = [];
     for (let i = 0; i < len; i++) {
         //1
-        let absoluteIndex = Math.abs(arr[i]) - 1; //4
+        let absoluteIndex = Math.abs(arr[i])-1; //4
+        
         let valAtAbsoluteIndex = arr[absoluteIndex];
-       
+        console.log(absoluteIndex, valAtAbsoluteIndex)
         if (valAtAbsoluteIndex < 0) {
             //console.log(absoluteValAtIndex+1, arr[absoluteValAtIndex])
             duplicateArr.push(Math.abs(arr[i]));
         } else {
             arr[absoluteIndex] = -1 * arr[absoluteIndex]; //-7
         }
-
         // console.log(arr)
     }
     return duplicateArr;
