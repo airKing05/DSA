@@ -122,3 +122,56 @@ function addTwoArrEleJustLikeNum1(arr1, arr2) {
 }
 const result1 = addTwoArrEleJustLikeNum1([121, 3], [129, 9]);
 console.log(result1)
+
+
+
+
+
+
+// m1b
+
+let fn = (arr1, arr2) => {
+    let len1 = arr1.length;
+    let len2 = arr2.length;
+
+    let i = 0;
+    let j = 0;
+
+    const sumArr = [];
+    let power = 0;
+    while (i < len1 || j < len2) {
+        let arr1Last = arr1.pop() || 0;
+        let arr2Last = arr2.pop() || 0;
+
+        const lastDigitSum = power + arr1Last + arr2Last;
+        // if (arr1Last == 0 && arr2Last == 0 && power > 0) {
+        //   console.log(arr1Last, arr2Last, power)
+        //   sumArr.unshift(power);
+        // }
+
+        power = 0;
+
+        if (lastDigitSum >= 10) {
+            const unitDigit = lastDigitSum % 10;
+            sumArr.unshift(unitDigit);
+            power = power + Math.floor(lastDigitSum / 10);
+        } else {
+            sumArr.unshift(lastDigitSum);
+        }
+
+        i++;
+        j++;
+    }
+
+    if (power > 0) {
+        sumArr.unshift(power);
+    }
+    return sumArr;
+};
+
+let array3 = [8];
+let array4 = [9, 4, 5];
+
+
+const resultM1b = fn(array1, array2)
+console.log(resultM1b);

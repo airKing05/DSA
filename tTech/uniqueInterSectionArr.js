@@ -1,4 +1,6 @@
 //L#01 unique and InterSection to two array
+// find the common intersection points fot both array 
+// and find the uniq element array
 
 const array1 = [ 1,2,3,4,5];
 const array2 = [4,5,6,7,8];

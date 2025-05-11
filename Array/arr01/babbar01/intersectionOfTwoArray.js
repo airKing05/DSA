@@ -31,3 +31,51 @@ const array1 = [1,2,2,3,3,3];
 const array2 = [2,3,3,4];
 const result = intersectionOfArray(array1, array2); 
 console.log(result)
+
+
+
+const formObj = (str) => {
+    let obj = {};
+    for (const iterator of str) {
+        obj[iterator] = obj[iterator] + 1 || 1;
+    }
+    return obj
+}
+
+
+const getInteArr = (num, arr, key) => {
+    while (num !== 0) {
+        arr.push(+key);
+        num--;
+    }
+    return arr;
+}
+
+
+let fn = (arr1, arr2) => {
+    let len1 = arr1.length;
+    let len2 = arr2.length;
+
+    let obj1 = formObj(arr1);
+    let obj2 = formObj(arr2);
+
+    let common = [];
+    for (let key in obj1) {
+        if (key in obj2) {
+            let countOfEle1 = obj1[key];
+            let countOfEle2 = obj2[key];
+            let intersectionCount = Math.min(countOfEle1, countOfEle2);
+            common = getInteArr(intersectionCount, common, key);
+        }
+    }
+
+
+    return common;
+
+}
+
+const array3 = [1, 2, 3, 3, 3, 4, 4, 4];
+const array4 = [2, 3, 3, 4, 4];
+
+const result1 = fn(array3, array4)
+console.log(result1);

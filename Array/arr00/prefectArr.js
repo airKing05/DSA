@@ -1,15 +1,22 @@
 
-// worng answer
-const prefectArr = (arr) => {
-    let l = arr.length;
-    for (let i = 0; i < l; i++) {
-        if (arr[i] === arr[l - i - 1]) {
-            return true
-        } else {
-            return false
-        }
+
+let prefectArr = (arr) => {
+    let len = arr.length;
+    let i = 1;
+    while (arr[i] > arr[i - 1] && i < len) {
+        ++i;
     }
+    while (arr[i] === arr[i - 1] && i < len) {
+        ++i;
+    }
+    while (arr[i] < arr[i - 1] && i < len) {
+        ++i;
+    }
+    console.log(len, i)
+    return len === i
 }
-const arr = [1, 2, 3, 2, 1, 2];
-const result = prefectArr(arr);
+
+const array = [1, 2, 3, 3, 3, 1];
+
+const result = prefectArr(array)
 console.log(result);

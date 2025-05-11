@@ -1,5 +1,6 @@
 //Coding Challenge #9: 
 //Find the Pivot element of the Array
+// pivot element index is, left side element is and right side element ara equal.
 
 
 function pivotPointArr(arr){
@@ -25,7 +26,7 @@ function pivotPointArr(arr){
             start++;
         }else{
             // leftSum == rightSum but start !== end
-            // so ither we could increase leftSum or ither right sum
+            // so ether we could increase leftSum or ether right sum
 
              rightSum = rightSum + arr[end];
              end--;

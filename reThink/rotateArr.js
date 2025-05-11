@@ -30,3 +30,16 @@ function rotateArr2(arr, numOfRotations){
 const array1 = [1,2,3,4,5, 6, 7, 8];
 const result2 = rotateArr2(array1, 3);
 console.log("result2", result2);
+
+
+
+//m3
+function rotateArr3(arr, num) {
+    let len = arr.length;
+    const lastArr = arr.splice(len - num, num).concat(arr);
+    return lastArr;
+}
+
+const array2 = [1, 2, 3, 4, 5, 6, 7, 8];
+const result3 = rotateArr2(array2, 3);
+console.log("result2", result2);

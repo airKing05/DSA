@@ -29,7 +29,7 @@ Book.prototype.reStock =  function(numOfCopiesRestock){
 }
 
 
-const book1 = new Book("how to win friend and influance people", "anil", 2);
+const book1 = new Book("how to win friend and influence people", "anil", 2);
 
 console.log("avialbilty:", book1.getAvilability())
 

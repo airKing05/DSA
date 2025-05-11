@@ -37,5 +37,5 @@ function anagramString(str1, str2) {
 
 const word1 = "hello";
 const word2 = "hollo";
-const result = anagramString(word1, word2);
+const result = anagramString(["flower","flow","flight"]);
 console.log(result)

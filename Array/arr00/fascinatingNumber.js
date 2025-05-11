@@ -1,4 +1,4 @@
-// fascinatingNumber, if 3 digit number after multiplying to 2 and 3 result digit should me present in between 1-9, at least one time
+// fascinatingNumber: - if 3 digit number, after multiplying to 2 and 3, result digit should be present in between 1-9, at least one time
 
 
 //After multiplication with 2 and 3, and concatenating with original number, resultant number is 192384576 which contains all digits from 1 to 9.

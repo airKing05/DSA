@@ -19,3 +19,19 @@ const decimalTOBinary = (n) => {
 const number = 2;
 const result = decimalTOBinary(number);
 console.log(result);
+
+
+
+
+//m2
+function fn(num) {
+    let bi = '';
+
+    while (num > 0) {
+        let rem = num % 2;
+        num = Math.floor(num / 2);
+        bi = rem + bi;
+    }
+
+    return bi
+}
