@@ -49,3 +49,37 @@ function removeZeroOfEle(arr) {
 }
 const result = removeZeroOfEle([101, 103, 10.5, 1006]);
 console.log(result)
+
+
+// m-3
+function removeZeroOfEle3(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let tempArr = [];
+        let n = arr[i]
+        while (n != 0) {
+            let ele = n % 10;
+            // console.log("ele", ele)
+            if(ele !== 0){
+                tempArr.unshift(ele);
+            }
+            n = parseInt(n / 10);
+        }
+ 
+        let tempEleSum = 0;
+        for(let j = 0; j < tempArr.length; j++){
+            let num = tempArr[j];
+            if(num % 1 != 0){ 
+                num = num*10;
+            }  // check is number decimal
+            tempEleSum = tempEleSum*10 + num;
+        }
+        
+               console.log("tempArr",tempArr, tempEleSum);
+       newArr.push(tempEleSum)
+    }
+
+    return newArr;
+}
+const result3 = removeZeroOfEle3([101, 103, 10.5, 1006]);
+console.log(result3)
